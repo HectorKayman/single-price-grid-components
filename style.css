@@ -9,7 +9,7 @@
   --primary-cyan: hsl(179, 62%, 43%);
   --primary-yellow: hsl(71, 73%, 54%);
 
-  --secondary-cyan: hsl(179, 69%, 38%);
+  --secondary-cyan: hsl(179, 63%, 45%);
 
   --neutral-gray: hsl(204, 43%, 93%);
   --neutral-blue: hsl(218, 22%, 67%);
@@ -58,11 +58,13 @@ section {
 .left {
   background: var(--primary-cyan);
   grid-area: left;
+  color: hsl(0, 0%, 100%);
 }
 
 .right {
   background: var(--secondary-cyan);
   grid-area: right;
+  color: hsl(0, 0%, 100%);
 }
 
 .top > h1 {
@@ -79,4 +81,10 @@ section {
 
 .top > p {
   color: var(--neutral-blue);
+}
+
+.left > h2,
+.right > h2 {
+  font-size: calc(var(--f-size) * 1.25);
+  padding-bottom: 1rem;
 }
