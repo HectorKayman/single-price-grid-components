@@ -46,6 +46,10 @@ main {
     'left right';
 }
 
+section {
+  padding: 3rem;
+}
+
 .top {
   background: hsl(0, 0%, 100%);
   grid-area: top;
@@ -59,4 +63,20 @@ main {
 .right {
   background: var(--secondary-cyan);
   grid-area: right;
+}
+
+.top > h1 {
+  font-size: calc(var(--f-size) * 2);
+  color: var(--primary-cyan);
+  padding-bottom: 1rem;
+}
+
+.top > h2 {
+  font-size: calc(var(--f-size) * 1.25);
+  color: var(--primary-yellow);
+  padding-bottom: 0.5rem;
+}
+
+.top > p {
+  color: var(--neutral-blue);
 }
