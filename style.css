@@ -88,3 +88,33 @@ section {
   font-size: calc(var(--f-size) * 1.25);
   padding-bottom: 1rem;
 }
+
+.left > div {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.left > div > h1 {
+  font-size: calc(var(--f-size) * 2);
+}
+
+.left > div > span {
+  color: var(--neutral-gray);
+}
+
+.left > p {
+  padding-bottom: 1.5rem;
+}
+
+.left > button {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary-yellow);
+  color: hsl(0, 0%, 100%);
+  font-weight: var(--f-w-bold);
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 3px 10px hsla(0, 0%, 25%, 0.5);
+}
