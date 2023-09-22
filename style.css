@@ -118,3 +118,9 @@ section {
   border-radius: 0.25rem;
   box-shadow: 0 3px 10px hsla(0, 0%, 25%, 0.5);
 }
+
+.right > p {
+  color: var(--neutral-gray);
+  font-size: calc(var(--f-size) * 0.8);
+  padding-bottom: 0.1rem;
+}
