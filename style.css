@@ -9,6 +9,8 @@
   --primary-cyan: hsl(179, 62%, 43%);
   --primary-yellow: hsl(71, 73%, 54%);
 
+  --secondary-cyan: hsl(179, 69%, 38%);
+
   --neutral-gray: hsl(204, 43%, 93%);
   --neutral-blue: hsl(218, 22%, 67%);
 }
@@ -32,4 +34,29 @@ body {
   justify-content: center;
   align-items: center;
   background: var(--neutral-gray);
+}
+
+main {
+  max-width: 50%;
+  display: grid;
+  grid-column: 1fr 1fr;
+  grid-row: 1fr 1fr;
+  grid-template-areas:
+    'top top'
+    'left right';
+}
+
+.top {
+  background: hsl(0, 0%, 100%);
+  grid-area: top;
+}
+
+.left {
+  background: var(--primary-cyan);
+  grid-area: left;
+}
+
+.right {
+  background: var(--secondary-cyan);
+  grid-area: right;
 }
