@@ -127,3 +127,31 @@ section {
   font-size: calc(var(--f-size) * 0.8);
   padding-bottom: 0.1rem;
 }
+
+@media screen and (max-width: 1000px) {
+  main {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    max-width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    height: auto;
+  }
+  main {
+    max-width: 90%;
+    margin-block: 5rem;
+    grid-column: 1;
+    grid-row: 3;
+    grid-template-areas:
+      'top'
+      'left'
+      'right';
+  }
+}
